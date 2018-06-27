@@ -26,7 +26,7 @@ def play(songs)
     if users_response == song
       return output = "Playing #{song}" 
     elsif users_response.to_i > 0 && users_response.to_i <= songs.length
-      return output = "Playing #{songs[users_response.to_i]}"
+      return output = "Playing #{songs[users_response.to_i-1]}"
     else
       return output = "Invalid input, please try again"
     end

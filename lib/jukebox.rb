@@ -18,7 +18,10 @@ puts  "I accept the following commands:
 - exit : exits this program"
 end
 
-def play
+def play(songs)
+  puts "Please enter a song name or number:"
+  users_response = gets.chomp
+  
 end
 
 def list(songs)

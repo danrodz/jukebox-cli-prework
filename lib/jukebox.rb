@@ -27,10 +27,9 @@ def play(songs)
       return puts output = "Playing #{song}" 
     elsif users_response.to_i > 0 && users_response.to_i <= songs.length
       return puts output = "Playing #{songs[users_response.to_i-1]}"
-    else
-      return puts output = "Invalid input, please try again"
     end
   end
+  puts output = "Invalid input, please try again"
 end
 
 def list(songs)

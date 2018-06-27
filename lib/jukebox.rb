@@ -44,6 +44,8 @@ end
 
 def run
   help
+  exit_now = false 
+  while !exit_now
   puts "Please enter a command:"
   users_response = gets.strip
 end

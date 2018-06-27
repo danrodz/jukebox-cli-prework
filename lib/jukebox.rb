@@ -48,4 +48,5 @@ def run
   while !exit_now
   puts "Please enter a command:"
   users_response = gets.strip
+  end
 end

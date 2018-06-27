@@ -24,11 +24,11 @@ def play(songs)
   output = ""
   songs.each.with_index(1) do |song, index|
     if users_response == song
-      output = "Playing #{song}" 
+      return output = "Playing #{song}" 
     elsif users_response.to_i > 0 && users_response.to_i <= songs.length
-      output = "Playing #{songs[users_response.to_i]}"
+      return output = "Playing #{songs[users_response.to_i]}"
     else
-      output = "Invalid input, please try again"
+      return output = "Invalid input, please try again"
     end
   end
   output

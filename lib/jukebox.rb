@@ -31,6 +31,7 @@ def play(songs)
       output = "Invalid input, please try again"
     end
   end
+  output
 end
 
 def list(songs)

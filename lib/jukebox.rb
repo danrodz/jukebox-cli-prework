@@ -21,8 +21,11 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   users_response = gets.chomp
-  if 
-    
+  songs.each.with_index(1) do |song, index|
+    if users_response.to
+  end
+  if  
+  
   elsif users_response.to_i > 0 && users_response.to_i <= songs.length
     
   else

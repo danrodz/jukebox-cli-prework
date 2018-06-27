@@ -21,7 +21,13 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   users_response = gets.chomp
+  if 
+    
+  elsif users_response.to_i > 0 && users_response.to_i <= songs.length
+    
+  else
   
+  end
 end
 
 def list(songs)

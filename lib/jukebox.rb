@@ -45,4 +45,5 @@ end
 def run
   help
   puts "Please enter a command:"
+  users_response = gets.strip
 end

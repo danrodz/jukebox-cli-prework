@@ -23,13 +23,13 @@ def play(songs)
   users_response = gets.chomp
   songs.each.with_index(1) do |song, index|
     if users_response == song ||
-  end
-  if  
   
-  elsif users_response.to_i > 0 && users_response.to_i <= songs.length
+    if  
     
-  else
-  
+    elsif users_response.to_i > 0 && users_response.to_i <= songs.length
+      
+    else
+    end
   end
 end
 

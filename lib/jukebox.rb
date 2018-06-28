@@ -55,6 +55,7 @@ def run(songs)
     elsif users_response == "play"
       play(songs)
     elsif users_response == "exit"
+      exit_jukebox
       not_exit = false
     end
   end

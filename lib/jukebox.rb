@@ -44,8 +44,8 @@ end
 
 def run
   help
-  exit_now = false 
-  while !exit_now
+  not_exit = true 
+  while not_exit
     puts "Please enter a command:"
     users_response = gets.strip
     if users_response == "help"
@@ -55,7 +55,7 @@ def run
     elsif users_response == "play"
       play(songs)
     elsif users_response == "exit"
-      exit_now = true
+      not_exit = false
     end
   end
 end

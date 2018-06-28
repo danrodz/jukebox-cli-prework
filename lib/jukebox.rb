@@ -48,5 +48,24 @@ def run
   while !exit_now
     puts "Please enter a command:"
     users_response = gets.strip
+    if users_response == "help"
+      help
+    elsif users_response == "list"
+      list(songs)
+    elsif users_response == "play"
+      play(songs)
+    elsif users_response == "exit"
+      exit_now = true
+    end
   end
 end
+
+
+
+
+
+
+
+
+
+

@@ -47,7 +47,7 @@ def run
   not_exit = true 
   while not_exit
     puts "Please enter a command:"
-    users_response = gets.strip
+    users_response = gets.chomp
     if users_response == "help"
       help
     elsif users_response == "list"
